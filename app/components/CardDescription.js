@@ -1,11 +1,11 @@
 import React from "react";
 
-const CardDescription = ({ description, white }) => {
+const CardDescription = ({ description, white, highlight, size }) => {
   return (
     <p
       className={`text-${
-        white ? "white" : "description-dark"
-      } text-sm text-center text-wrap`}
+        white ? "white" : highlight ? "highlight" : "description-dark"
+      } text-${size === "xs" ? "xs" : "sm"} text-center text-wrap`}
     >
       {description}
     </p>
