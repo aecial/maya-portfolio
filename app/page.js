@@ -2,7 +2,10 @@ import Image from "next/image";
 import Nav from "./components/Nav";
 import LandingCard from "./components/LandingCard";
 import ImageCard from "./components/ImageCard";
+import StarDivider from "./components/StarDivider";
+import CardDescription from "./components/CardDescription";
 
+import Link from "next/link";
 export default function Home() {
   // <Image
   //         className="dark:invert"
@@ -16,20 +19,11 @@ export default function Home() {
     <>
       <LandingCard>
         <Nav />
-        <h4 className="text-[#2481AA]">Hi! I am</h4>
-        <h1 className="text-[#51BBE8] font-bold text-2xl text-wrap text-center">
+        <h4 className="text-description">Hi! I am</h4>
+        <h1 className="text-highlight font-bold text-2xl text-wrap text-center">
           Maureene Mae E. Inovejas
         </h1>
-
-        <p>
-          <Image
-            src="/images/Stars.png"
-            alt="star"
-            width={100}
-            height={38}
-            priority
-          />
-        </p>
+        <StarDivider />
         <p>
           <Image
             src="/images/Logo.png"
@@ -39,13 +33,13 @@ export default function Home() {
             priority
           />
         </p>
-        <p className="text-[#51BBE8]">
+        <p className="text-description">
           A freelancer graphic artist, UI/UX designer, using Procreate, Ibis
           Paint X and Figma.
         </p>
         <a
           href="#aboutDiv"
-          className="btn bg-[#E8F8FC] text-[#0E4A63] border-0"
+          className="btn bg-[#E8F8FC] text-[#0E4A63] border-0 hover:bg-[#E8F8FC] hover:text-[#0E4A63] hover:scale-125"
         >
           About me{" "}
           <svg
@@ -94,6 +88,41 @@ export default function Home() {
         }
         link={"/projects"}
       />
+      <div className="p-4 container h-screen md:mx-auto">
+        <div className="bg-[#2482aa74] rounded-lg w-full h-full flex flex-col justify-center items-center gap-10 text-center p-2 fur-border">
+          <h2 className="text-3xl text-white text-bold">Order a commission?</h2>
+          <StarDivider white={true} />
+          <CardDescription
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+            white={true}
+          />
+          <button className="btn bg-white border border-[#0E4A63] text-description-dark shadow-lg shadow-white hover:bg-white hover:bored hover:text-description-dark hover:shadow-white hover:scale-125">
+            Comission Me
+          </button>
+        </div>
+      </div>
+      <div className="p-4 justify-center items-center text-center flex gap-4">
+        <Link
+          href="https://youtu.be/jJzw1h5CR-I?si=MKrVNBTjRaSQ9yUm"
+          className="bg-white rounded-full"
+        >
+          <Image src="/images/x.png" alt="twitter" width={64} height={64} />
+        </Link>
+        <Link
+          href="https://youtu.be/jJzw1h5CR-I?si=MKrVNBTjRaSQ9yUm"
+          className="bg-white rounded-full"
+        >
+          <Image src="/images/fb.png" alt="fb" width={64} height={64} />
+        </Link>
+        <Link
+          href="https://youtu.be/jJzw1h5CR-I?si=MKrVNBTjRaSQ9yUm"
+          className="bg-white rounded-full"
+        >
+          <Image src="/images/gmail.png" alt="gmail" width={64} height={64} />
+        </Link>
+      </div>
       {/* <LandingCard id={"aboutDiv"}></LandingCard> */}
     </>
   );

@@ -5,6 +5,12 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-image: url("/images/pattern.png");
+}
+.bg-cute {
+  background-image: url("/images/pattern.png");
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,3 +32,24 @@ body {
     text-wrap: balance;
   }
 } */
+@layer utilities {
+  .text-highlight {
+    color: #51bbe8;
+  }
+  .text-description {
+    color: #2481aa;
+  }
+  .text-description-dark {
+    color: #0e4a63;
+  }
+  .bg-light-blue {
+    background-color: #e8f8fc;
+  }
+  .convert-white {
+    filter: brightness(0) invert(1);
+  }
+}
+.fur-border {
+  border: 15px solid transparent;
+  border-image: url("/images/borderPattern.png") 30 round;
+}

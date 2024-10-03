@@ -11,15 +11,16 @@ const ImageCard = ({ id, imageSrc, title, description, link, btnTitle }) => {
     : imageSize.toFixed(2);
   return (
     <div id={id} className="p-4 container h-screen md:mx-auto">
-      <div className="bg-white rounded-lg w-full h-full flex flex-col gap-10 items-center text-center p-2">
-        <div className="w-full h-[30%] rounded-t-md overflow-hidden flex gap-1">
+      <div className="bg-white rounded-lg w-full h-full flex flex-col gap-10 items-center text-center p-2 opacity-85 fur-border">
+        <div className="w-[100%] h-[30%] rounded-t-md overflow-hidden flex gap-1">
           {imageSrc.map((image, index) => {
             return (
               <img
                 key={index}
                 src={`/images/${image}`}
                 alt={`Cat ${index}`}
-                className={`w-[${formattedImageSize}%] object-cover md:object-contain bg-gray-100`}
+                style={{ width: `${formattedImageSize}%` }}
+                className={`object-cover md:object-contain bg-gray-100`}
               />
             );
           })}

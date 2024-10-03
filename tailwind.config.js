@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        lexend: ["var(--font-lexend)"],
+      },
     },
   },
   plugins: [require("daisyui")],

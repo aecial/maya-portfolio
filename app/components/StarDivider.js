@@ -1,9 +1,8 @@
-import React from "react";
 import Image from "next/image";
-const StarDivider = ({ dark }) => {
+const StarDivider = ({ dark, white }) => {
   return (
     <Image
-      className={dark ? "dark:invert" : ""}
+      className={dark ? "dark:invert" : white ? "convert-white" : ""}
       src="/images/Stars.png"
       alt="star"
       width={100}

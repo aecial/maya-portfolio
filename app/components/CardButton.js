@@ -4,7 +4,7 @@ const CardButton = ({ title, link }) => {
   return (
     <Link
       href={link}
-      className="btn bg-[#E8F8FC] text-[#0E4A63] border-0 flex justify-center items-center text-center"
+      className="btn hover:scale-125 hover:bg-light-blue hover:text-description-dark bg-light-blue text-description-dark border-0 flex justify-center items-center text-center"
     >
       {title}
       <svg
@@ -16,8 +16,8 @@ const CardButton = ({ title, link }) => {
         className="size-5"
       >
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
         />
       </svg>
