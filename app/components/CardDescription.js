@@ -5,7 +5,7 @@ const CardDescription = ({ description, white, highlight, size }) => {
     <p
       className={`text-${
         white ? "white" : highlight ? "highlight" : "description-dark"
-      } text-${size === "xs" ? "xs" : "sm"} text-center text-wrap`}
+      } text-xs text-center text-wrap`}
     >
       {description}
     </p>

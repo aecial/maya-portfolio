@@ -48,9 +48,9 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-4 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4 mt-5  md:mx-36">
         <div className="border border-solid border-[#51BBE8] w-full flex justify-center items-center">
-          <div className="w-full h-44">
+          <div className="w-full h-44 lg:h-60">
             <img
               src="/images/cat.png"
               alt="pic1"
@@ -59,7 +59,7 @@ const About = () => {
           </div>
         </div>
         <div className="border border-solid border-[#51BBE8] w-full flex justify-center items-center">
-          <div className="w-full h-44 ">
+          <div className="w-full h-44 lg:h-60">
             <img
               src="/images/cat.png"
               alt="pic2"
@@ -68,7 +68,7 @@ const About = () => {
           </div>
         </div>
         <div className="border border-solid border-[#51BBE8] w-full flex justify-center items-center">
-          <div className="w-full h-44 ">
+          <div className="w-full h-44 lg:h-60">
             <img
               src="/images/cat.png"
               alt="pic3"
@@ -77,7 +77,7 @@ const About = () => {
           </div>
         </div>
         <div className="border border-solid border-[#51BBE8] w-full flex justify-center items-center">
-          <div className="w-full h-44 ">
+          <div className="w-full h-44 lg:h-60">
             <img
               src="/images/cat.png"
               alt="pic4"
