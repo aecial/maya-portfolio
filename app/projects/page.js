@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen p-10">
-      <BoxTitle />
+      <BoxTitle title={"UI/UX Designer Projects"} />
       <div>
         <div className="w-14 h-14 mx-auto">
           <img src="/images/mobileProj.png" alt="mobile" />

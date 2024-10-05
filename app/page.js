@@ -86,7 +86,7 @@ export default function Home() {
         description={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
-        link={"/projects"}
+        link={"/commissions"}
       />
       <div className="p-4 container h-screen md:mx-auto">
         <div className="bg-[#2482aa74] rounded-lg w-full h-full flex flex-col justify-center items-center gap-10 text-center p-2 fur-border">
